@@ -14,17 +14,17 @@
 
 @implementation YYAspectMananer
 
-+ (void)trackAspectHooks
++ (void)trackAspectHooksWithEventDict:(NSDictionary *)eventDict
 {
-    [self trackViewAppear];
-    [self trackClickEvent];
+    [self trackViewAppearWithEventDict:eventDict];
+    [self trackClickEventWithEventDict:eventDict];
 }
 
 
 #pragma mark -- 监控统计用户进入此界面的时长，频率等信息
-+ (void)trackViewAppear
++ (void)trackViewAppearWithEventDict:(NSDictionary *)eventDict
 {
-    NSDictionary *eventDict = [YYEvent getEventDictionary];
+//    NSDictionary *eventDict = [YYEvent getEventDictionary];
     [UIViewController aspect_hookSelector:@selector(viewWillAppear:) withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo){
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             NSString *className = NSStringFromClass([[aspectInfo instance] class]);
@@ -48,7 +48,7 @@
 }
 
 #pragma mark --- 监控点击事件
-+ (void)trackClickEvent
++ (void)trackClickEventWithEventDict:(NSDictionary *)eventDict
 {
     __weak typeof(self) ws = self;
     
@@ -56,7 +56,7 @@
     //放到异步线程去执行
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         //读取配置文件，获取需要统计的事件列表
-        NSDictionary *eventDict = [YYEvent getEventDictionary];
+//        NSDictionary *eventDict = [YYEvent getEventDictionary];
         for (NSString *classNameString in eventDict.allKeys) {
             //使用运行时创建类对象
             const char * className = [classNameString UTF8String];

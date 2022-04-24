@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YYAspectMananer : NSObject
 
-+ (void)trackAspectHooks;
++ (void)trackAspectHooksWithEventDict:(NSDictionary *)eventDict;
 
 @end
 

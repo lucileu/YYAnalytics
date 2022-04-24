@@ -32,8 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)saveEvent;
 
-/// 获取所有埋点事件
-+ (NSDictionary *)getEventDictionary;
+
 
 @end
 

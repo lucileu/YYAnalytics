@@ -6,7 +6,6 @@
 //
 
 #import "YYEvent.h"
-#import "YYBuriedPoint.h"
 
 @interface YYEvent ()
 
@@ -77,44 +76,6 @@
     NSLog(@"filePath = %@", filePath);
 }
 
-+ (NSDictionary *)getEventDictionary
-{
-    return @{
-        @"RedViewController" : @{
-            YYEvent.pageName : Page0.pageName,
-            YYEvent.buttonEvent : @[
-                @{
-                    YYEvent.methodName : @"clickButton:",
-                    YYEvent.clickName : Page0.click0
-                },
-                @{
-                    YYEvent.methodName : @"notParams",
-                    YYEvent.clickName : Page0.click1
-                },
-            ],
-            YYEvent.tableViewEvent : @[
-                @{
-                    YYEvent.methodName : @"tableView:didSelectRowAtIndexPath:",
-                    YYEvent.clickName : Page0.click2
-                },
-            ],
-            YYEvent.collectionViewEvent : @[
-                @{
-                    YYEvent.methodName : @"collectionView:didSelectItemAtIndexPath:",
-                    YYEvent.clickName : Page0.click3
-                },
-            ]
-        },
-        @"BlueViewController" : @{
-            YYEvent.pageName : Page1.pageName,
-            YYEvent.buttonEvent : @[
-                @{
-                    YYEvent.methodName : @"testClick:",
-                    YYEvent.clickName : Page1.click0
-                },
-            ]
-        },
-    };
-}
+
 
 @end
