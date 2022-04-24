@@ -1,0 +1,16 @@
+PODS:
+  - YYAnalytics (0.1.0)
+
+DEPENDENCIES:
+  - YYAnalytics (from `../`)
+
+EXTERNAL SOURCES:
+  YYAnalytics:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YYAnalytics: 6e5f58278add56b935a6e3753f6f87cda87de2d5
+
+PODFILE CHECKSUM: f28eb16ba0eff8b2587f5922c07813896e4473b4
+
+COCOAPODS: 1.11.3

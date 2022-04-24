@@ -1,0 +1,22 @@
+{
+  "name": "YYAnalytics",
+  "version": "0.1.0",
+  "summary": "A short description of YYAnalytics.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lucileu/YYAnalytics",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lucileu": "363146203@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/lucileu/YYAnalytics.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "YYAnalytics/Classes/**/*"
+}
