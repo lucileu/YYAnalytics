@@ -7,7 +7,7 @@
 
 #import "YYUserInfoTool.h"
 #import "JYSystemTool.h"
-#import "YYModel.h"
+#import <YYModel/YYModel.h>
 
 #define YY_USER_INFO_KEY  @"YY_USER_INFO_KEY"
 

@@ -7,12 +7,14 @@
 //
 
 #import "YYAppDelegate.h"
+#import <YYAnalytics/YYAspectMananer.h>
 
 @implementation YYAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [YYAspectMananer trackAspectHooksWithEventDict:@{}];
     return YES;
 }
 

@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "AppDelegate+Analytics.h"
 #import "Aspects.h"
 #import "JYSystemTool.h"
 #import "NSObject+Swizzle.h"

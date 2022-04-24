@@ -8,7 +8,7 @@
 #import "YYNetworkTool.h"
 #import "YYAnalyticsModel.h"
 #import "JYSystemTool.h"
-#import "AFNetworking.h"
+#import <AFNetworking/AFNetworking.h>
 #import "YYDefine.h"
 
 #define JY_BaseUrl @"https://action.nianyuxinxi.cn/mobile/api/free/action/handlenew"

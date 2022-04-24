@@ -1,16 +1,43 @@
 PODS:
-  - YYAnalytics (0.1.0)
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - YYAnalytics (0.1.1):
+    - AFNetworking
+    - YYModel
+  - YYModel (1.0.4)
 
 DEPENDENCIES:
+  - AFNetworking
   - YYAnalytics (from `../`)
+  - YYModel
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - YYModel
 
 EXTERNAL SOURCES:
   YYAnalytics:
     :path: "../"
 
 SPEC CHECKSUMS:
-  YYAnalytics: 6e5f58278add56b935a6e3753f6f87cda87de2d5
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  YYAnalytics: 5989bec62658a171cef714e95671e66e29f368d3
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: f28eb16ba0eff8b2587f5922c07813896e4473b4
+PODFILE CHECKSUM: 096ca67d4d80d52fa309e83400f26f031c17d117
 
 COCOAPODS: 1.11.3

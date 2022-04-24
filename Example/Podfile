@@ -10,4 +10,7 @@ target 'YYAnalytics_Example' do
 
     
   end
+  
+  pod 'AFNetworking'
+  pod 'YYModel'
 end
